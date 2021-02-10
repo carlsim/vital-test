@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello World!</title>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+<!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+    <!-- <style>
+      @font-face{font-family:Poppins;src:local("Poppins-ExtraLight"),url(../../Poppins-ExtraLight.ttf) format("ttf");font-weight:200}@font-face{font-family:Poppins;src:local("Poppins-Light"),url(../../fonts/Poppins-Light.ttf) format("ttf");font-weight:300}@font-face{font-family:Poppins;src:local("Poppins-Regular"),url(../../fonts/Poppins-Regular.ttf) format("ttf");font-weight:400}@font-face{font-family:Poppins;src:local("Poppins-Medium"),url(../../fonts/Poppins-Medium.ttf) format("ttf");font-weight:500}@font-face{font-family:Poppins;src:local("Poppins-SemiBold"),url(../../fonts/Poppins-SemiBold.ttf) format("ttf");font-weight:600}@font-face{font-family:Poppins;src:local("Poppins-Bold"),url(../../fonts/montserrat-black-webfont.woff) format("ttf");font-weight:700}*,:after,:before{box-sizing:border-box}body{margin:0;padding:0}body,html{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;font-smoothing:antialiased}body,html{font-family:Poppins,sans-serif;font-size:16px}h1,p{font-family:Poppins,sans-serif;line-height:28px}.container{margin:0 auto;padding:0 24px}.container--regular{max-width:800px}.gradient-wrapper{background:linear-gradient(#eee,#fff)}.headline__bg{height:90vh;width:100%;background:#eee}.headline__content{position:relative;height:100%;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column}.headline__content .title-area{width:900px;max-width:100%;padding:24px;margin:auto;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;font-weight:500}.headline__content .title-area .title{margin-right:12px}.headline__content .title-area .title h1{font-weight:600;margin:0}.headline__content .title-area .subtitle{margin-left:12px}.headline__content .title-area .subtitle p{font-size:1.125em;margin:0}.about__content{padding-top:100px;padding-bottom:100px}
+    </style> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:500" rel="stylesheet"> -->
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__bg">
+        <div class="header__content">
+          VITALY
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="test-section">
+        <section id="headline" class="headline">
+          <div class="headline__bg">
+            <div class="headline__content container container--regular">
+              <div class="text-area">
+                <h1>Lorem ipsum dolor sit amet consectetur </h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aperiam itaque dicta iusto ullam nesciunt pariatur nam sapiente quis voluptatum laboriosam veritatis, optio autem? Temporibus rerum voluptatibus aut sit est?
+                </p>
+              </div>
+            </div> <!--end of headline__content-->
+          </div><!--end of headline__bg-->
+        </section>
+        <section id="post-area" class="post-area">
+          <div class="post-area__bg">
+            <div class="post-area__content flex-grid container container--regular">
+
+              <div class="row">
+
+                <div class="entry">
+                  <div class="image-area">
+                    <img src="images/INTEGERsmall.gif" alt="image"/>
+                  </div>
+                  <div class="text-area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus error nesciunt corporis? Reiciendis labore minus quasi commodi voluptates cum ea nemo. Dolorem aliquam vitae, accusantium provident eius blanditiis labore!</p>
+                  </div>
+                </div>
+
+              </div><!--end of row-->
+              <div class="row">
+                
+                <div class="entry">
+                  <div class="image-area">
+                    <img src="images/INTEGERsmall.gif" alt="image"/>
+                  </div>
+                  <div class="text-area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus error nesciunt corporis? Reiciendis labore minus quasi commodi voluptates cum ea nemo. Dolorem aliquam vitae, accusantium provident eius blanditiis labore!</p>
+                  </div>
+                </div>
+
+              </div><!--end of row-->
+              <div class="row">
+
+                <div class="entry">
+                  <div class="image-area">
+                    <img src="images/INTEGERsmall.gif" alt="image"/>
+                  </div>
+                  <div class="text-area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus error nesciunt corporis? Reiciendis labore minus quasi commodi voluptates cum ea nemo. Dolorem aliquam vitae, accusantium provident eius blanditiis labore!</p>
+                  </div>
+                </div>
+
+              </div><!--end of row-->
+              <div class="row">
+
+                <div class="entry">
+                  <div class="image-area">
+                    <img src="images/INTEGERsmall.gif" alt="image"/>
+                  </div>
+                  <div class="text-area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloribus error nesciunt corporis? Reiciendis labore minus quasi commodi voluptates cum ea nemo. Dolorem aliquam vitae, accusantium provident eius blanditiis labore!</p>
+                  </div>
+                </div>
+
+              </div><!--end of row-->
+
+            </div><!--end of product-area__contet-->
+          </div><!-- end of div cproduct-area__bg-->
+        </section>
+      </div>
+    </main><!--end of main-->
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.min.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

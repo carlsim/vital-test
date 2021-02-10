@@ -1,0 +1,79 @@
+/**
+  * Flex Grid
+  * .flex-grid
+  *
+  * Block:
+  * .flex-grid__box - Specifies an block area in the grid (not an actual item block)
+  */
+
+.flex-grid{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .row{
+    display: flex;
+    flex-direction: column;
+  }
+  /**
+    * Block:
+    * .flex-grid__box - Specifies an block area in the grid (not an actual item block)
+    *
+    * Modifiers:
+    * .flex-grid__box--1x - Covers regular (1x) amount of area
+    * .flex-grid__box--2x - Covers a larger (2x) amount of area
+    */
+    //flex-wrap: wrap;
+  &--1-col{
+    display: flex;
+    flex: 1;
+  }
+  &--2-col{
+    display: flex;
+    flex: 2;
+  }
+  &--3-col{
+    display: flex;
+    flex: 3;
+  }
+  &--4-col{
+    display: flex;
+    flex: 4;
+  }
+  &--5-col{
+    display: flex;
+    flex: 5;
+  }
+  &--6-col{
+    display: flex;
+    flex: 6;
+  }
+
+  &--1-col,
+  &--2-col,
+  &--3-col,
+  &--4-col,
+  &--5-col,
+  &--6-col{
+    &>a{
+      flex: 1;
+      text-decoration: none;
+      decoration: none;
+      &:visited{
+        text-decoration: none;
+        decoration: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $medium){
+  .flex-grid{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    .row{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/**
+*	Footer SCSS
+**/
+.footer{
+    &__bg{
+        // height: 300px;
+    }
+    &__content{
+        color: #000;
+        .top-area{
+            background: $colorGrey100;
+            padding: 175px 24px 32px 24px;
+            @media all and (min-width: $medium){
+                padding: 300px 24px 32px 24px;
+            }
+        }
+        .bottom-area{
+            background: #colorGrey100;
+            padding: 32px 24px;
+            @media all and (min-width: $medium){
+                padding: 32px 24px;
+            }
+            &__content{
+                // color: $colorGrey600;
+            }
+        }
+        p{
+            font-size: 0.850em;
+            @media all and (min-width: $medium){
+                font-size: 1em;
+            }
+            font-weight: 500;
+        }
+    }
+}

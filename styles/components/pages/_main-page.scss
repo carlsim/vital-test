@@ -1,0 +1,50 @@
+/**
+* Styles for the main page
+*/
+.header{
+    &__bg{
+        background: #000;
+        padding: 24px 16px;
+    }
+    &__content{
+        color: #fff;
+        text-align: center;
+        font-size: 1.500em;
+    }
+}
+
+.headline{
+    &__bg{
+
+    }
+    &__content{
+        margin-bottom: 82px;
+        .text-area{
+            text-align: center;
+        }
+    }
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 62px;
+    @media all and (min-width: $medium){
+        flex-direction: row;
+    }
+    .image-area{
+        flex: 1;
+    }
+    .text-area{
+        flex: 1;
+        margin: 32px;
+    }
+}
+
+.row:nth-child(even){
+    .entry{
+        @media (min-width: $medium){
+            flex-direction: row-reverse;
+        }
+    }
+}

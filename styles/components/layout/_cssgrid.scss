@@ -1,0 +1,11 @@
+/**
+*   CSS Grid SCSS
+**/
+.css-grid{
+    &--block{
+        display: grid;
+    }
+    &--inline{
+        display: inline-grid;
+    }
+}

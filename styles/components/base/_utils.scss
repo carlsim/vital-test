@@ -1,0 +1,41 @@
+/**
+ * Utils Styling
+ *
+ * For utility styles that can be plugged into elements to
+ * allow easier modification
+ */
+
+ .push{
+ 	&--top{
+ 		margin-bottom: auto;
+ 	}
+ 	&--right{
+ 		margin-left: auto;
+ 	}
+ 	&--bottom{
+ 		margin-top: auto;
+ 	}
+ 	&--left{
+ 		margin-right: auto;
+ 	}
+ 	&--center{
+ 		margin: auto;
+ 	}
+ }
+
+ .hide{
+ 	&--sm{
+ 		display: none;
+ 	}
+ 	&--lg{
+ 		display: none;
+ 	}
+ }
+
+ .hidden{
+	transform: scaleY(0) !important;
+    opacity: 0;
+	max-height: 0;
+    overflow: hidden !important;
+    transition: 0.12s ease-out;
+ }
