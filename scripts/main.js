@@ -6,7 +6,7 @@
   console.log('[Running JS] Hello World!');
 
   //Variable declarations
-  const API_URL = '../data/data.json';
+  const API_URL = 'https://carlsim.github.io/vital-test/data/data.json';
 
   //logging output
   // console.log(API_URL);
@@ -35,6 +35,6 @@
   // Call async function to get the data from JSON
   getData()
   .catch(error => {
-    console.log(`ErrorL ${error}`);
+    console.log(`Error: ${error}`);
   });
 })();
